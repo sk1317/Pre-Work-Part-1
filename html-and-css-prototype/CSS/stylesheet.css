@@ -1,5 +1,4 @@
-obal resets */
-/*Global resets */
+Global resets */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -43,171 +42,38 @@ h1 {
 /* Your CSS code goes here */
 
 /*Black speech bubble*/
-	.bubble {
-		position:relative;
-    background-color: #424242;
-    color: #FFFFFF;
-  	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-    line-height: 120px;
-    text-align: center;
-    width: auto;
-    border-radius: 5px;
-		padding-left: 600px;
-		padding-right:600px;
-		margin-right:auto;
+.bubble {
+  position:relative;
+  background: #454444;
+  color: #FFFFFF;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  font-size: 20px;
+  line-height: 120px;
+  text-align: center;
+  max-width: 400px;
+	max-height: inherit;
+  border-radius: 5px;
+	margin: auto;
 }
-	 /*triange on speech bubble*/
-	 	.bubble:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: #454444 transparent;
-    border-width: 24px 11px 0;
-    bottom: -24px;
-    left: 81%;
-    margin-left: -11px;
-		padding-bottom: 10px;
+	 /*triangle on speech bubble*/
+.bubble:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #454444 transparent;
+  border-width: 24px 11px 0;
+  bottom: -24px;
+  left: 81%;
+	padding-bottom: 10px;
 }
-/* Box around Donation  */
-.wrapper {
-	display:grid;
-	grid-template-columns: 2 1fr;
-	grid-template rows: auto;
-	height: 400px;
-  margin: auto;
-	border: 1px solid black;
-	max-width: 400px;
-	padding: 25px;
-  position: relative;
-	border: bold;
-}
-
-p {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	padding: 10%;
-	color:#777;
-}
-.days-remain {
-	color: red;
-	font-weight: bold;
-}
-.donation-input{
-	display:block;
-	width: 49%;
-  font-weight: bold;
-  padding: 10px;
-}
- #give.btn{
-	 display: block;
-	 width: 30%;
-	 height: 15pt;
-	 background-color: #1CBC2C;
-	 color: white;
-	 text-align: center;
-	 border-color: #1CBC2C;
-	 font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	 border-radius: 5%;
-	 margin-top: 10px
- }
-.ask {
-	color: #20A1D4;
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	padding: 10%;
-	border-radius: 5%;
-}
-#save-btn #share-btn {
-	display: inline-block;
-	width:49%;
-	height: 60px;
-	color: #777;
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	border-radius: 5%;
-	border-color: #eaeaea;
-	position:relative;
-}
-
-#share-btn{
-padding-left: 3px;
-}obal resets */
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
-}
-
-/* Fonts */
-h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
-}
-
-.container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
-}
-
-/* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
-
-	FONTS:
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-
-  COLORS:
-  blue: #20A1D4;
-  green: #1CBC2C;
-  orange: #EF5F3C;
-  black: #424242;
-  grey: #777;
-  light grey: #eaeaea;
-*/
-
-/* Your CSS code goes here */
-
-/*Black speech bubble*/
-	.bubble {
-    position:relative;
-    background: #454444;
-    color: #FFFFFF;
-  	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-    font-size: 20px;
-    line-height: 120px;
-    text-align: center;
-    max-width: 300px;
-		max-height: inherit;
-    border-radius: 5px;
-		margin: auto;
-}
-	 /*triange on speech bubble*/
-	 	.bubble:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    border-style: solid;
-    border-color: #454444 transparent;
-    border-width: 24px 11px 0;
-    bottom: -24px;
-    left: 81%;
-    margin-left: -11px;
-		padding-bottom: 10px;
-}
-/* Box around Donation  */
+/* Box around Donation, with grid attempt semi-intact*/
 .wrapper {
   display: grid;
 	grid-template-areas: 0, 0, 400px, 20%;
-	height: 300px;
+	height: 400px;
   margin: auto;
 	border: 1px solid black;
 	max-width: 400px;
@@ -237,27 +103,30 @@ p {
   padding: 10px;
 	float: left;
 }
-/*At one point the input and the give now botton were next to each other, looking great, then that changed and I think there is one too many things happening now to get it back*/
- #give.btn{
-	 display: inline-block;
-	 float: right;
-	 width: 30%;
-	 height: 40pt;
-	 background-color: #1CBC2C;
-	 color: white;
-	 text-align: center;
-	 border-color: #1CBC2C;
-	 font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	 border-radius: 5%;
+/*At one point the input and the give now botton were next to each other, looking great, then that changed and I think there is one too many things happening now to get it back. In the process of trying to fix it, a lot was added.*/
+#give.btn{
+	display: inline;
+	float: right;
+	width: 40%;
+	height: 55pt;
+	background-color: #1CBC2C;
+  color: white;
+	text-align: center;
+  border-color: #1CBC2C;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  border-radius: 5%;
+  align: right;
+  font-size: 30px;
  }
- /*I had the "ask" component in the box, but when the" "give" and "input" boxes lost their position, it was knocked out of the box. I aligned it on the right because it looked better asthetically*/
+ /*I had the "ask" component in the box, but when the" "give" and "input" boxes lost their position, it was knocked out of the box.*/
 .ask {
 	color: #20A1D4;
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	border-radius: 5%;
 	text-align: left;
+	padding-top: -10px;
 }
-#save-btn, #share-btn {
+#save-btn {
 	display: inline-block;
 	width: 100px;
 	height: 60px;
@@ -265,7 +134,15 @@ p {
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	border-radius: 5%;
 	border-color: #eaeaea;
+	margin:auto;
 }
 #share-btn{
-padding-left: 3px;
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	color: #777;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	border-radius: 5%;
+	border-color: #eaeaea;
+  margin: inherit;
 }
