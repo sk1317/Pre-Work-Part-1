@@ -1,4 +1,5 @@
 obal resets */
+/*Global resets */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -43,11 +44,10 @@ h1 {
 
 /*Black speech bubble*/
 	.bubble {
-    position:relative;
-    background: #454444;
+		position:relative;
+    background-color: #424242;
     color: #FFFFFF;
   	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-    font-size: 20px;
     line-height: 120px;
     text-align: center;
     width: auto;
@@ -73,8 +73,9 @@ h1 {
 }
 /* Box around Donation  */
 .wrapper {
-  display: grid;
-  grid-row: auto;
+	display:grid;
+	grid-template-columns: 2 1fr;
+	grid-template rows: auto;
 	height: 400px;
   margin: auto;
 	border: 1px solid black;
@@ -182,9 +183,10 @@ h1 {
     font-size: 20px;
     line-height: 120px;
     text-align: center;
-    max-width: 400px;
+    max-width: 300px;
+		max-height: inherit;
     border-radius: 5px;
-		margin-right:auto;
+		margin: auto;
 }
 	 /*triange on speech bubble*/
 	 	.bubble:after {
@@ -204,22 +206,25 @@ h1 {
 /* Box around Donation  */
 .wrapper {
   display: grid;
-  grid-row: auto;
-	height: 400px;
+	grid-template-areas: 0, 0, 400px, 20%;
+	height: 300px;
   margin: auto;
 	border: 1px solid black;
 	max-width: 400px;
-	padding: 25px;
+	padding-top: 25px;
   position: relative;
 	border: bold;
+	border-top-color: red;
+	border-top-width: 30px;
 }
-
+/*This is the paragraph */
 p {
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	padding: 10%;
+	padding: 5%;
 	font-size:20px;
 	color:#777;
 }
+/*Mid sentence color change*/
 .days-remain {
 	color: red;
 	font-weight: bold;
@@ -227,11 +232,15 @@ p {
 }
 .donation-input{
 	width: 30%;
+	height: 40px;
   font-weight: bold;
   padding: 10px;
+	float: left;
 }
+/*At one point the input and the give now botton were next to each other, looking great, then that changed and I think there is one too many things happening now to get it back*/
  #give.btn{
-	 display: inline;
+	 display: inline-block;
+	 float: right;
 	 width: 30%;
 	 height: 40pt;
 	 background-color: #1CBC2C;
@@ -240,25 +249,23 @@ p {
 	 border-color: #1CBC2C;
 	 font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	 border-radius: 5%;
-	 align-items:right;
  }
+ /*I had the "ask" component in the box, but when the" "give" and "input" boxes lost their position, it was knocked out of the box. I aligned it on the right because it looked better asthetically*/
 .ask {
 	color: #20A1D4;
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	padding: 5%;
 	border-radius: 5%;
+	text-align: left;
 }
-#save-btn #share-btn {
-	display: block;
-	width:49%;
+#save-btn, #share-btn {
+	display: inline-block;
+	width: 100px;
 	height: 60px;
 	color: #777;
 	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
 	border-radius: 5%;
 	border-color: #eaeaea;
-	position:relative;
 }
-
 #share-btn{
 padding-left: 3px;
 }
